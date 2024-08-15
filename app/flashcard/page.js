@@ -7,6 +7,7 @@ import { db } from "@/firebase";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
+// displays the flashcards
 const Flashcard = () => {
   const { isLoaded, isSignedIn, user } = useUser();
   const [flashcards, setFlashcards] = useState([]);
@@ -30,7 +31,7 @@ const Flashcard = () => {
     getFlashCard();
   }, [user]);
 
-  return <></>
+  return <></>;
 };
 
 export default Flashcard;
