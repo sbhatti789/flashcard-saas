@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     // Container for the entire page layout
-    <Container maxWidth="100vw">
+    <Container maxWidth="100vw" sx={{ bgcolor: 'skyblue' }}>
       {/* Head section for meta tags and page title */}
       <Head>
         <title> Flashcard SaaS </title>
@@ -91,49 +91,77 @@ export default function Home() {
         </Button>
       </Box>
 
-      {/* Features section */}
-      <Box sx={{ my: 6 }}>
-        <Typography variant="h4" gutterBottom>
-          Features
+
+<Box sx={{ my: 6 }}>
+  <Typography variant="h4" gutterBottom>
+    Features
+  </Typography>
+  <Grid container spacing={4}>
+    {/* Feature 1: Easy Text Input */}
+    <Grid item xs={12} md={4}>
+      <Box
+        sx={{
+          p: 3,
+          bgcolor: 'white', // Background color white
+          borderRadius: 2, // Rounded corners
+          boxShadow: 1, // Light shadow for visual separation
+          height: '100%', // Make sure the box takes full height of grid item
+        }}
+      >
+        <Typography variant="h6" gutterBottom>
+          Easy Text Input
         </Typography>
-        <Grid container spacing={4}>
-          {/* Feature 1: Easy Text Input */}
-          <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
-              {" "}
-              Easy Text Input
-            </Typography>
-            <Typography>
-              Simply input your text and let our software do the rest. Creating
-              flashcards has never been easier.
-            </Typography>
-          </Grid>
-
-          {/* Feature 2: Smart Flashcards */}
-          <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
-              {" "}
-              Smart Flashcards{" "}
-            </Typography>
-            <Typography>
-              Our AI intelligently breaks down your text into concise flashcards
-              perfect for studying.
-            </Typography>
-          </Grid>
-
-          {/* Feature 3: Accessible Anywhere */}
-          <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
-              {" "}
-              Accessible Anywhere
-            </Typography>
-            <Typography>
-              Access your flashcards from any device, at any time. Study on the
-              go with ease.
-            </Typography>
-          </Grid>
-        </Grid>
+        <Typography>
+          Simply input your text and let our software do the rest. Creating
+          flashcards has never been easier.
+        </Typography>
       </Box>
+    </Grid>
+
+    {/* Feature 2: Smart Flashcards */}
+    <Grid item xs={12} md={4}>
+      <Box
+        sx={{
+          p: 3,
+          bgcolor: 'white', // Background color white
+          borderRadius: 2, // Rounded corners
+          boxShadow: 1, // Light shadow for visual separation
+          height: '100%', // Make sure the box takes full height of grid item
+        }}
+      >
+        <Typography variant="h6" gutterBottom>
+          Smart Flashcards
+        </Typography>
+        <Typography>
+          Our AI intelligently breaks down your text into concise flashcards
+          perfect for studying.
+        </Typography>
+      </Box>
+    </Grid>
+
+    {/* Feature 3: Accessible Anywhere */}
+    <Grid item xs={12} md={4}>
+      <Box
+        sx={{
+          p: 3,
+          bgcolor: 'white', // Background color white
+          borderRadius: 2, // Rounded corners
+          boxShadow: 1, // Light shadow for visual separation
+          height: '100%', // Make sure the box takes full height of grid item
+        }}
+      >
+        <Typography variant="h6" gutterBottom>
+          Accessible Anywhere
+        </Typography>
+        <Typography>
+          Access your flashcards from any device, at any time. Study on the
+          go with ease.
+        </Typography>
+      </Box>
+    </Grid>
+  </Grid>
+</Box>
+
 
       {/* Pricing section */}
       <Box sx={{ my: 6, textAlign: "center" }}>
@@ -147,9 +175,10 @@ export default function Home() {
             <Box
               sx={{
                 p: 3,
-                border: "3px solid",
-                borderColor: "grey.300",
-                borderRadius: 2,
+                bgcolor: 'white', // Background color white
+                borderRadius: 2, // Rounded corners
+                boxShadow: 1, // Light shadow for visual separation
+                height: '100%', // Make sure the box takes full height of grid item
               }}
             >
               <Typography variant="h5" gutterBottom>
@@ -173,9 +202,10 @@ export default function Home() {
             <Box
               sx={{
                 p: 3,
-                border: "3px solid",
-                borderColor: "grey.300",
-                borderRadius: 2,
+                bgcolor: 'white', // Background color white
+                borderRadius: 2, // Rounded corners
+                boxShadow: 1, // Light shadow for visual separation
+                height: '100%', // Make sure the box takes full height of grid item
               }}
             >
               <Typography variant="h5" gutterBottom>
